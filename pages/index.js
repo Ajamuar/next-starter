@@ -15,11 +15,10 @@ import {
   Divider,
   Icon,
   ScrollView,
-  NativeBaseProvider,
 } from "native-base";
 import { AntDesign, EvilIcons } from "@expo/vector-icons";
 
-function SignUp() {
+export default function SignUp() {
   const [count, setCount] = useState(false);
   return (
     <>
@@ -246,11 +245,3 @@ function SignUp() {
     </>
   );
 }
-
-export default () => {
-  return (
-    <NativeBaseProvider>
-      <SignUp />
-    </NativeBaseProvider>
-  );
-};
