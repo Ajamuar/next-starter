@@ -6,7 +6,18 @@ const withTM = require("next-transpile-modules")([
   "native-base",
 ]);
 
-const nextConfig = {};
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        // this will match `/english(default)/something` being requested
+        source: "/english\\(default\\)/:slug",
+        destination: "/en-us/:slug",
+        permanent: false,
+      },
+    ];
+  },
+};
 
 module.exports = withPlugins(
   [
