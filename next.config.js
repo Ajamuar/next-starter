@@ -11,8 +11,8 @@ const nextConfig = {
     return [
       {
         // this will match `/english(default)/something` being requested
-        source: "/english\\(default\\)/:slug",
-        destination: "/en-us/:slug",
+        source: "/",
+        destination: "/sign-in",
         permanent: false,
       },
     ];
