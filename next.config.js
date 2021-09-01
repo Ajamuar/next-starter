@@ -12,7 +12,7 @@ const nextConfig = {
       {
         // this will match `/english(default)/something` being requested
         source: "/",
-        destination: "/sign-in",
+        destination: "/sign-up",
         permanent: false,
       },
     ];
